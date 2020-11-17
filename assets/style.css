@@ -58,6 +58,7 @@ p {
     font-size: 20px;
     transition: 1s;
     word-spacing: 40px;
+
 }
 
 .masuk {
@@ -87,14 +88,14 @@ li {
 a {
 
     text-decoration: none;
-    color: rgb(75, 133, 67);
+    color: rgb(206, 245, 222);
     font-weight: bold;
     position: relative;
     right: 40px;
 }
 
 .kiri {
-    color: rgb(67, 112, 112, .5);
+    color: rgba(181, 243, 186, .9);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 30px;
