@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Doang</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <p style="font-weight: bold;">MY WEBSITE</p>
+            <h1>saya </h1>
+
+            <hr>
+            <p id="launch"> </p>
+            <p class="hamid">@2020 CHAIRUL HAMID</p>
+        </div>
+    </header>
+</body>
+
+<script>
+    var countDownDate = new Date("NOV 3,2020 00:00:00").getTime();
+    var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("launch").innerHTML = days + "hari " + hours + "jam " + minutes + "menit " +
+            seconds + "detik";
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("launch").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+</html>
